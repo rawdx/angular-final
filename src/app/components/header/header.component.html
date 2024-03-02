@@ -1,0 +1,10 @@
+<header class="header">
+    <input
+      class="new-task"
+      placeholder="Create a new task"
+      autoFocus
+      [value]="content"
+      (keyup)="changeContent($event)"
+      (keyup.enter)="addTask()"
+    />
+  </header>

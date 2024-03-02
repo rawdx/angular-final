@@ -1,0 +1,23 @@
+@if (authService.currentUserSig() == null){
+
+<form class="register" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <h1>Register</h1>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Username" formControlName="username" />
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="text" placeholder="Email" formControlName="email" />
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput type="password" placeholder="Password" formControlName="password" />
+    </mat-form-field>
+    <div>
+        <button mat-stroked-button type="submit">Sign Up</button>
+    </div>
+    <br>
+    @if (errorMessage) {
+    <div>{{ errorMessage }}</div>
+    }
+</form>
+
+}

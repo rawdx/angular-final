@@ -1,0 +1,18 @@
+<section class="main" [ngClass]="{ hidden: noTasksClass() }">
+    <input
+      id="toggle-all"
+      class="toggle-all"
+      type="checkbox"
+      [checked]="isAllTasksSelected()"
+      (change)="toggleAllTasks($event)"
+    />
+    <label for="toggle-all">Mark all as completed</label>
+    <ul class="task-list">
+      <app-task
+        *ngFor="let task of visibleTasks()"
+        [task]="task"
+        [isEditing]="editingId === task.id"
+        (setEditingId)="setEditingId($event)"
+      ></app-task>
+    </ul>
+  </section>
