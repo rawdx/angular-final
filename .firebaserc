@@ -1,0 +1,15 @@
+
+{
+  "targets": {
+    "task-manager-1c94a": {
+      "hosting": {
+        "task-manager": [
+          "task-manager-1c94a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "task-manager-1c94a"
+  }
+}

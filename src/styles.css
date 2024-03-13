@@ -56,7 +56,7 @@ button {
   font-family: inherit;
   font-weight: inherit;
   line-height: 1.4em;
-  color: inherit;
+  color: #343434;
   padding: 6px;
   border: 1px solid #999;
   box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -263,7 +263,7 @@ button {
 }
 
 .filters li a {
-  color: inherit;
+  color: black;
   margin: 3px;
   padding: 3px 7px;
   text-decoration: none;
